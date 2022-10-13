@@ -1,0 +1,55 @@
+body{
+    background: #333;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    min-height: 50vh;
+}
+.box{
+    background: whitesmoke;
+    width: 200px;
+    height: 200px;
+    position: relative;
+    animation-name: myanimation ;
+    animation-duration: 8s;
+ /* animation-iteration-count: infinite; */
+    animation-delay: 2s;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+
+}
+
+@keyframes myanimation {
+    0%{
+        background-color: aliceblue;
+        left: 0vh;
+        top: 0vh;
+        border-radius: 15px;
+    }
+    25%{
+        background-color: red;
+        left: 300px;
+        top: 0vh;
+        border-radius: 50% 0 0 0;
+        
+    }
+    50%{
+        background-color: green;
+        left: 300px;
+        top: 300px;
+        border-radius: 50% 50% 0 0 ;
+    }
+    75%{
+        background-color: blue;
+        left: 0vh;
+        top: 300px;
+        border-radius: 50% 50% 50% 0;
+    }
+    100%{
+        background-color: beige;
+        left: 0px;
+        top: 0vh;
+        border-radius: 15px;
+    }
+}
