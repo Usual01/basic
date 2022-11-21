@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="script.js" defer></script>
+  <link rel="stylesheet" href="melt.css">
+  <title>Password Generator</title>
+</head>
+<body>
+  <div class="wrapper">
+    <h1 class="title">Password Generator</h1>
+    <p>create a quick random password using this custom Generator</p>
+    
+    <div class="result-container">
+    <h3  id="passwordDisplay">password</h3>
+    
+      <button class="btn" id="clipboard">
+          copy
+      </button>
+  </div>
+    
+    <form id="passwordGeneratorForm" class="form">
+      <label for="characterAmountNumber">Number Of Characters</label>
+     <input class="number-input" type="number" min="1" max="50" value="10" id="characterAmountNumber">
+      
+
+      <label for="uppercaseCharacters">Include Uppercase</label>
+      <input type="checkbox" id="uppercaseCharacter">
+
+      <label for="numbersCharacter">Include Numbers</label>
+      <input type="checkbox" id="numbersCharacter">
+
+      <label for="symbolsCharacter">Include Symbols</label>
+      <input type="checkbox" id="symbolsCharacter">
+
+      <button type="submit" class="submit">Generate Password</button>
+    </form>
+  </div>
+</body>
+</html>
